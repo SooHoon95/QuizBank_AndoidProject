@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyPageAddressEditActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주소 등록/변경"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_mypage_addressEdit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="입력하시려면 여기를 클릭하세요"
+        />
+
+    <EditText
+        android:id="@+id/et_mypage_addressEdit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:hint="나머지 주소를 입력해주세요"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_Mypage_AddressEdit_Cancel"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소"
+            android:backgroundTint="#B1B1B1"
+            />
+
+        <Button
+            android:id="@+id/btn_Mypage_AddressEdit_OK"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="등록"
+            android:backgroundTint="#009688"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.KakaoSignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카카오로 회원가입"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="35dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID : "
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이름 : "
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/tv_nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TextView"
+                    android:textSize="30dp"
+                    android:textColor="#FF9800"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        >
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="3.5"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                >
+                <RadioGroup
+                    android:id="@+id/rg_status_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/rb_student_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="학생 회원"
+                        android:layout_marginRight="10dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/rb_teacher_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="강사 회원"
+                        android:layout_marginLeft="10dp"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <EditText
+                    android:id="@+id/edt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="주소를 입력해주세요"
+                    android:gravity="center"
+                    />
+                <EditText
+                    android:id="@+id/edt_division"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="소속을 입력해주세요"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/signup_btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:backgroundTint="#09CBB8"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

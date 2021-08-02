@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".Activity.OthersPageTeacherActivity">
+    <TextView
+        android:id="@+id/tv_OthersPage_teacher_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="15dp"
+        android:text="개인정보정책"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/tv_OthersPage_teacher_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버전 정보"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:padding="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_OthersPage_teacher_Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="15dp"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/tv_OthersPage_teacher_DeleteMyAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원탈퇴"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:layout_marginTop="2dp"
+        android:padding="15dp"
+        />
+</LinearLayout>

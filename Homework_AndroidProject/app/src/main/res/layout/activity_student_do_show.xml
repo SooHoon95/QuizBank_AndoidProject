@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StudentDoShowActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_student_do_show_workbookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="내 문제집"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_student_Quiz_No"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="n 번 문제"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="WebViewLayout">
+            
+            <WebView
+                android:id="@+id/wv_student_do"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <RadioGroup
+            android:id="@+id/rg_student_do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            >
+            <RadioButton
+                android:id="@+id/rb_student_do_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 번"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_student_do_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 번"
+                />
+
+
+            <RadioButton
+                android:id="@+id/rb_student_do_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 번"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_student_do_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4 번"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_student_do_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 번"
+                />
+
+        </RadioGroup>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next_quiz"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:backgroundTint="#0CDA96"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="5dp"
+        android:text="다음 문제" />
+
+</LinearLayout>

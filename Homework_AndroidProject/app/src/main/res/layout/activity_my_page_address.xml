@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MyPageAddressActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주소 등록/변경"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_MyPage_teacher_Address1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="현재 입력된 주소입니다."
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_MyPage_teacher_Address2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="현재 입력된 나머지 주소입니다."
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btn_MyPage_AddressAPI_Remove"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="삭제"
+            android:backgroundTint="#B1B1B1"
+            android:layout_margin="2dp"
+            />
+        <Button
+            android:id="@+id/btn_MyPage_AddressAPI_Edit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:text="등록 / 변경"
+            android:layout_margin="2dp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>

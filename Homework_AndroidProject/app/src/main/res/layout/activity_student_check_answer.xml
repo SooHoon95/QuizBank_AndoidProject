@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StudentDoShowActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_chkAnswer_wTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="내 문제집"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/tv_chkAnswer_quizNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="n 번 문제"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="WebViewLayout">
+
+            <WebView
+                android:id="@+id/wv_chkAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_correct_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정답"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_myAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="내가 고른 답"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:id="@+id/btn_chkAnswer_next_quiz"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginVertical="20dp"
+            android:text="다음 결과"
+            android:backgroundTint="#0CDA96"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+</LinearLayout>

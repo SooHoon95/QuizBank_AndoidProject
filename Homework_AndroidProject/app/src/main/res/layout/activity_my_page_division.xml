@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Activity.MyPageDivisionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="소속 등록/변경"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_MyPage_Division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="현재 입력된 소속입니다."
+        android:textSize="20dp"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/btn_MyPage_Division_Remove"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="삭제"
+            android:backgroundTint="#B1B1B1"
+            android:layout_marginRight="6dp"
+            />
+        <Button
+            android:id="@+id/btn_MyPage_Division_Edit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:text="등록 / 변경"
+            android:layout_marginLeft="6dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
